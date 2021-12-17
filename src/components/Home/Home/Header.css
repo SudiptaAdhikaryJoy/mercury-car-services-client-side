@@ -1,0 +1,11 @@
+.nav-container {
+    border: 20px 20px 20px 20px;
+    border-radius: 5px;
+    padding: 10px 10px;
+    transition: 1s;
+}
+
+.nav-container:hover {
+    transform: scale(1.4);
+    box-shadow: 2px 2px 2px 2px #fff;
+}
