@@ -9,7 +9,7 @@ import { Grid } from '@mui/material';
 const Service = ({service}) => {
     const {name, image, description } = service;
     return (
-        <>
+        
           <Grid item xs={2} sm={4} md={4}>
             <Card sx={{ minWidth: 275 }}>
       <CardContent>
@@ -30,7 +30,7 @@ const Service = ({service}) => {
     </Card>
                         
         </Grid>  
-        </>
+        
     );
 };
 
