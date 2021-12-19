@@ -22,11 +22,11 @@ const Header = () => {
                     <Nav.Link href="#features">Features</Nav.Link>
                     <Nav.Link as={HashLink} to="/services#services">Services</Nav.Link>
                     <Nav.Link as={HashLink} to="/appointment"><Button>Appointment</Button></Nav.Link>
-                    <Nav.Link href="login">
+                    <Nav.Link as={Link} to="/login">Login
+                    </Nav.Link>
                         <Navbar.Text>
                         Signed in as: <a href="#login">Mark Otto</a>
                     </Navbar.Text>
-                    </Nav.Link>
                 </Navbar.Collapse>
                 </Container>
             </Navbar>  

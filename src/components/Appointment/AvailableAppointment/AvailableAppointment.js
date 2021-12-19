@@ -12,6 +12,7 @@ const AvailableAppointment = ({date, setDate}) => {
                         <TimeSlots
                             key={timeSlot.id}
                             timeSlot={timeSlot}
+                            date={date}
                         ></TimeSlots>
                         )
                 }

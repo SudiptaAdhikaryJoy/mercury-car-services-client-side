@@ -5,6 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Grid } from '@mui/material';
+import CardMedia from '@mui/material/CardMedia';
 
 const Service = ({service}) => {
     const {name, image, description } = service;
@@ -13,9 +14,12 @@ const Service = ({service}) => {
           <Grid item xs={2} sm={4} md={4}>
             <Card sx={{ minWidth: 275 }}>
       <CardContent>
-        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          Word of the Day
-        </Typography>
+        <CardMedia
+        component="img"
+        height="140"
+        image={image}
+        alt="green iguana"
+      />
         <Typography variant="h5" component="div">
             {name}
         </Typography>
