@@ -2,7 +2,7 @@ import { Grid, Paper, Typography, Button } from '@mui/material';
 import React from 'react';
 import SlotsModal from '../SlotsModal/SlotsModal';
 
-const TimeSlots = ({timeSlot, date}) => {
+const TimeSlots = ({timeSlot, date, setBookingSuccess}) => {
     const {name, slots, time} = timeSlot;
     const [openSlots, setOpenSlots] = React.useState(false);
   const handleSlotsOpen = () => setOpenSlots(true);
@@ -29,6 +29,7 @@ const TimeSlots = ({timeSlot, date}) => {
             timeSlot={timeSlot}
             openSlots={openSlots}
             handleSlotsClose={handleSlotsClose}
+            setBookingSuccess={setBookingSuccess}
         >
 
         </SlotsModal>

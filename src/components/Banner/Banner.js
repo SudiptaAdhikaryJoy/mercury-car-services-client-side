@@ -16,8 +16,8 @@ const Banner = () => {
                     alt="First slide"
                     />
                     <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <h3 style={{color: 'red', fontWeight: 700, fontSize: '50px'}}>Make Your Engine Dynamic</h3>
+                    <p>Come and Explore Us</p>
                     <Link to='/about'><a style={{color: '#fff', fontWeight: 600, fontSize: '30px', textDecoration: 'none' }} href="">Purchase</a></Link>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -29,7 +29,7 @@ const Banner = () => {
                     />
                     <Carousel.Caption>
                     <h3 className="mb-3" style={{color: 'red', fontWeight: 700, fontSize: '50px'}}>Set Your Car Wheel Perfectly</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>We ensure you to stay with us</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -40,8 +40,8 @@ const Banner = () => {
                     />
 
                 <Carousel.Caption>
-                <h3 style={{color: 'red', fontWeight: 700, fontSize: '50px'}}>Third slide label</h3>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                <h3 style={{color: 'red', fontWeight: 700, fontSize: '50px'}}>Make your car confindent</h3>
+                <p>We believe that we can make your car confindent available</p>
                 </Carousel.Caption>
             </Carousel.Item>
             </Carousel>   

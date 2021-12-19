@@ -1,11 +1,14 @@
-import { Container, Grid, Typography } from '@mui/material';
-import React from 'react';
+import { Container, Grid, Typography, Alert } from '@mui/material';
+import React, { useState } from 'react';
 import TimeSlots from '../TimeSlots/TimeSlots';
 
 const AvailableAppointment = ({date, setDate}) => {
+    const [bookingSuccess, setBookingSuccess] = useState(false);
     return (
         <Container>
             <Typography variant="h4" sx={{color: '#203A43', mb: 2, fontWeight: 500}}>Car servicing {date.toDateString()}</Typography>
+            {bookingSuccess?.email && <Alert severity="success" color="info">
+                        Booking Confirm</Alert> }
             <Grid container spacing={2}>
                 {
                     timeSlots.map(timeSlot =>
@@ -13,6 +16,7 @@ const AvailableAppointment = ({date, setDate}) => {
                             key={timeSlot.id}
                             timeSlot={timeSlot}
                             date={date}
+                            setBookingSuccess={setBookingSuccess}
                         ></TimeSlots>
                         )
                 }
