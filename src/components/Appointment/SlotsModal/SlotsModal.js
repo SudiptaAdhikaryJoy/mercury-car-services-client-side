@@ -46,7 +46,7 @@ const SlotsModal = ({openSlots, handleSlotsClose, timeSlot, date,setBookingSucce
       }
 
       // send data to server
-      fetch('http://localhost:5000/service_appointment',{
+      fetch('http://https://shrouded-oasis-41830.herokuapp.com/service_appointment',{
         method: 'POST',
         headers:{
           'content-type': 'application/json'
