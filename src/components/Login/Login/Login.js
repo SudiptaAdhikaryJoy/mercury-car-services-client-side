@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { NavLink, useHistory, useLocation } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import LinearPro from './../../LinearProgress/LinearPro';
+import GoogleIcon from '@mui/icons-material/Google';
 
 const Login = () => {
     const [loginData, setLoginData] = useState({});
@@ -32,7 +33,7 @@ const Login = () => {
         <Container>
             <Grid container spacing={2}>
                 <Grid sx={{mt : 10}} item xs={12} md={6}>
-                    <Typography variant="body1" gutterBottom>Login</Typography>
+                    <Typography variant="h4" gutterBottom>Login</Typography>
                     <form onSubmit={handleLoginSubmit}>
                         <TextField
                         sx={{ width: '75%', m: 1}}
@@ -53,12 +54,12 @@ const Login = () => {
                             <NavLink style={{textDecoration: 'none'}} to='/register'><Button sx={{m: 2}} variant='text'>New User? Click Register</Button></NavLink>
                             { isLoading && <LinearPro/>}
                     {user?.email ? <Alert severity="success" color="info">
-                        This is a success alert — check it out!
+                        Successfully Logged In
                         </Alert>:
-                         <Alert variant="filled" severity="error">{authError}</Alert>}
+                         <Alert variant="filled" severity="error"></Alert>}
                     </form>
                     <p>------------</p>
-                    <Button onClick={handleGoogle}>Google SignIn</Button>
+                    <Button onClick={handleGoogle}><GoogleIcon sx={{fontSize: 50}}></GoogleIcon></Button>
                 </Grid>
                 <Grid item xs={12} md={6}>
 

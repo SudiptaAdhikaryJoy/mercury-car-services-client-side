@@ -13,7 +13,6 @@ const Header = () => {
         color: 'yellow',
         fontsize: '1.5em'
     }
-
     return (
         <>
           <Navbar bg="dark" variant="dark" sticky="top" collapseOnSelect expand="lg">
@@ -22,20 +21,18 @@ const Header = () => {
                     
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
-                        <Nav.Link as={HashLink} to="/home#home">Home</Nav.Link>
-                    <Nav.Link href="#features">Features</Nav.Link>
-                    <Nav.Link as={HashLink} to="/services#services">Services</Nav.Link>
-                    <Nav.Link as={HashLink} to="/appointment"><Link style={{textDecoration: 'none'}}>Appointment</Link></Nav.Link>
+                        <Nav.Link style={{color: '#fff'}} as={HashLink} to="/home#home">Home</Nav.Link>
+                    <Nav.Link style={{color: '#fff'}} as={HashLink} to="/features#features">Features</Nav.Link>
+                    <Nav.Link style={{color: '#fff'}} as={HashLink} to="/services#services">Services</Nav.Link>
+                    <Nav.Link style={{textDecoration: 'none', color:'#fff'}} as={HashLink} to="/appointment">Appointment</Nav.Link>
                     {
                         user?.email ?
                         <Box className='d-flex m-2'>
-                            <Nav.Link  as={Link} to="/dashboard"><Link style={{textDecoration: 'none'}} color='inherit'>DashBoard</Link></Nav.Link> 
-                            <Link sx={{color:'white'}} onClick={logOut} variant="contained" style={{textDecoration: 'none'}}>LogOut</Link> 
+                            <Nav.Link style={{color: '#fff'}} as={Link} to="/dashboard"><Link style={{textDecoration: 'none', marginRight: '15px'}} color='inherit'>DashBoard</Link><Link sx={{color:'white'}} onClick={logOut} variant="contained" style={{textDecoration: 'none'}}>LogOut</Link> </Nav.Link>                             
                         </Box>
                             :
-                        <Nav.Link as={Link} to="/login">Login</Nav.Link>
-                    }
-                        
+                        <Nav.Link style={{color: '#fff'}} as={Link} to="/login">Login</Nav.Link>
+                    }                        
                 </Navbar.Collapse>
                 </Container>
             </Navbar>  

@@ -6,10 +6,13 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Grid } from '@mui/material';
 import CardMedia from '@mui/material/CardMedia';
+import Header from '../Home/Home/Header';
+
 
 const Service = ({service}) => {
     const {name, image, description } = service;
     return (
+      
         
           <Grid item xs={2} sm={4} md={4}>
             <Card sx={{ minWidth: 275 }}>

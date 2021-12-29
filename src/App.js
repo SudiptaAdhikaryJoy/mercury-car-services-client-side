@@ -14,12 +14,15 @@ import AuthProvider from './contexts/AuthProvider/AuthProvider';
 import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
 import Dashboard from './components/Dashboard/Dashboard';
 import Footer from './components/Shared/Footer/Footer';
+import Header from './components/Home/Home/Header';
+// import LinearPro from './components/LinearProgress/LinearPro';
 
 function App() {
   return (
     <div className="App">
       <AuthProvider>
         <Router>
+        <Header></Header>
         <Switch>
           <Route exact path='/'>
             <Home></Home>

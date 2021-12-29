@@ -22,7 +22,7 @@ const style = {
 
 
 const SlotsModal = ({openSlots, handleSlotsClose, timeSlot, date,setBookingSuccess}) => {
-    const {name, slots, time} = timeSlot;
+    const {name, slots, time, price} = timeSlot;
     const {user} = useAuth();
     const info = {customerName: user.displayName, email: user.email, phone: ''};
     const [slotsInfo, setSlotsInfo] = useState(info);
@@ -32,6 +32,7 @@ const SlotsModal = ({openSlots, handleSlotsClose, timeSlot, date,setBookingSucce
         const value = e.target.value;
         const newInfo = {...slotsInfo};
         newInfo[field] = value;
+        console.log(newInfo);
         setSlotsInfo(newInfo);
     }
 
@@ -41,12 +42,13 @@ const SlotsModal = ({openSlots, handleSlotsClose, timeSlot, date,setBookingSucce
       const service_appointments = {
         ...slotsInfo,
         time,
+        price,
         serviceName: name,
         date: date.toLocaleDateString()
       }
 
       // send data to server
-      fetch('http://https://shrouded-oasis-41830.herokuapp.com/service_appointment',{
+      fetch('https://shrouded-oasis-41830.herokuapp.com/service_appointment',{
         method: 'POST',
         headers:{
           'content-type': 'application/json'

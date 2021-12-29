@@ -3,7 +3,7 @@ import React from 'react';
 import SlotsModal from '../SlotsModal/SlotsModal';
 
 const TimeSlots = ({timeSlot, date, setBookingSuccess}) => {
-    const {name, slots, time} = timeSlot;
+    const {name, slots, time, price} = timeSlot;
     const [openSlots, setOpenSlots] = React.useState(false);
   const handleSlotsOpen = () => setOpenSlots(true);
   const handleSlotsClose = () => setOpenSlots(false);
@@ -17,6 +17,9 @@ const TimeSlots = ({timeSlot, date, setBookingSuccess}) => {
                 </Typography>
                 <Typography variant="h6" gutterBottom component='div'>
                     {time}
+                </Typography>
+                <Typography variant="caption" gutterBottom display="block">
+                    price ${price} 
                 </Typography>
                 <Typography variant="caption" gutterBottom display="block">
                     {slots} slots available
