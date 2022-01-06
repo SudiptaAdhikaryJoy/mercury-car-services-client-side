@@ -11,3 +11,16 @@ const ContactForm = () => {
         ).catch(err=>console.log(err));
         e.target.reset();
     }
+    return (
+        <div className="container border "
+            style={{marginTop:'50px',
+            width: '50%',
+            backgroundImage: `url('https://wallpaperaccess.com/full/2579674.jpg')`,
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            border: '20px',
+            borderRadius: '10px',
+            borderShadow: 'large'
+        }}
+        
+        >
