@@ -17,8 +17,8 @@ const Banner = () => {
                     />
                     <Carousel.Caption>
                     <h3 style={{color: 'greenYellow', fontWeight: 700, fontSize: '50px'}}>Make Your Engine Dynamic</h3>
-                    <p>Come and Explore Us</p>
-                    <Link to='/about'><a style={{color: '#fff', fontWeight: 600, fontSize: '30px', textDecoration: 'none' }} href=""></a></Link>
+                    <p style={{color:'red'}}>Come and Explore Us</p>
+                    {/* <Link to='/about'><a style={{color: '#fff', fontWeight: 600, fontSize: '30px', textDecoration: 'none' }} href=""></a></Link> */}
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
