@@ -25,6 +25,7 @@ const Header = () => {
                     <Nav.Link style={{color: '#fff'}} as={HashLink} to="/features#features">Features</Nav.Link>
                     <Nav.Link style={{color: '#fff'}} as={HashLink} to="/services#services">Services</Nav.Link>
                     <Nav.Link style={{textDecoration: 'none', color:'#fff'}} as={HashLink} to="/appointment">Appointment</Nav.Link>
+                    <Nav.Link style={{textDecoration: 'none', color:'#fff'}} as={HashLink} to="/contact">Contact Us</Nav.Link>
                     {
                         user?.email ?
                         <Box className='d-flex m-2'>
