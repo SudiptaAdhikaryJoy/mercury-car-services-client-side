@@ -15,6 +15,7 @@ import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
 import Dashboard from './components/Dashboard/Dashboard';
 import Footer from './components/Shared/Footer/Footer';
 import Header from './components/Home/Home/Header';
+import ContactForm from './components/ContactForm/ContactForm';
 // import LinearPro from './components/LinearProgress/LinearPro';
 
 function App() {
@@ -44,6 +45,9 @@ function App() {
           </Route>
           <Route path='/services'>
             <Services></Services>
+          </Route>
+          <Route path='/contact'>
+            <ContactForm></ContactForm>
           </Route>
         </Switch>
         <Footer></Footer>
