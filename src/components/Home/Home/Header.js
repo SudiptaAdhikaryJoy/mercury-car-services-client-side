@@ -28,7 +28,7 @@ const Header = () => {
                     {
                         user?.email ?
                         <Box className='d-flex m-2'>
-                            <Nav.Link style={{color: '#fff'}} as={Link} to="/dashboard"><Link style={{textDecoration: 'none', marginRight: '15px'}} color='inherit'>DashBoard</Link><Link sx={{color:'white'}} onClick={logOut} variant="contained" style={{textDecoration: 'none'}}>LogOut</Link> </Nav.Link>                             
+                            <Nav.Link style={{color: '#fff',textDecoration: 'none', marginRight: '15px'}} as={Link} to="/dashboard"><Link style={{}} color='inherit'>DashBoard</Link><Link sx={{color:'white'}} onClick={logOut} variant="contained" style={{textDecoration: 'none'}}>LogOut</Link> </Nav.Link>                             
                         </Box>
                             :
                         <Nav.Link style={{color: '#fff'}} as={Link} to="/login">Login</Nav.Link>

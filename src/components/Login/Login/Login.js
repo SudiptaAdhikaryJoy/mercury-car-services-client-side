@@ -56,7 +56,7 @@ const Login = () => {
                     {user?.email ? <Alert severity="success" color="info">
                         Successfully Logged In
                         </Alert>:
-                         <Alert variant="filled" severity="error"></Alert>}
+                         <Alert variant="filled" severity="error">{authError}</Alert>}
                     </form>
                     <p>------------</p>
                     <Button onClick={handleGoogle}><GoogleIcon sx={{fontSize: 50}}></GoogleIcon></Button>
