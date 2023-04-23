@@ -8,7 +8,7 @@ In this project we can make car servicing website, here customer visit and book 
 -User can know about services.
 -User can chatting through messanger.
 
-## Technology
--React Router Dom, React Bootstrap, React, Material UI
+###  Technology
+# React Router Dom, React Bootstrap, React, Material UI
 
 ## Live-Link: https://mercury-car-services.web.app/
